@@ -1,0 +1,9 @@
+# не включаем в образ
+.venv
+venv/
+docker-compose.yaml
+Dockerfile
+.dockerignore
+nginx/
+.git/
+.github/
