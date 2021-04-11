@@ -1,4 +1,4 @@
-https://github.com/Morales1991/yamdb_final/actions/workflows/main.yml/badge.svg
+https://github.com/Morales1991/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
 
 
 # api_yamdb
