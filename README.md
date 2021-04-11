@@ -1,3 +1,6 @@
+https://github.com/Morales1991/yamdb_final/actions/workflows/main.yml/badge.svg
+
+
 # api_yamdb
 
 Проект YaMDb пользовательский портал, на котором пользователи обсуждают: «Книги», «Фильмы», «Музыку».

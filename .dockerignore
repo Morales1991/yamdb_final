@@ -7,3 +7,4 @@ Dockerfile
 nginx/
 .git/
 .github/
+yamdb_workflow.yaml
