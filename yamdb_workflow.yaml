@@ -59,9 +59,9 @@ jobs:
           script: |
             sudo mv /home/app/yamdb_final/.env /home/app/
             sudo rm -rf /home/app/yamdb_final
+            cd /home/app/
             sudo git clone https://Morales1991:${{ secrets.ACCESS_TOKEN }}@github.com/morales1991/yamdb_final.git
             sudo mv /home/app/.env /home/app/yamdb_final
-            cd /home/app/yamdb_final
             sudo docker-compose down -v
             sudo docker-compose up -d
 
