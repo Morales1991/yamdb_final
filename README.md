@@ -1,4 +1,4 @@
-https://github.com/Morales1991/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
+![api_yamdb](https://github.com/Morales1991/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
 
 # api_yamdb
@@ -56,14 +56,12 @@ YaMDB отправляет письмо с кодом подтверждения
 
 ## Развертывание проекта
 
-python manage.py createsuperuser  Создание супер пользователя 
+Развертывание проекта осуществляется командой docker-compose up
 
-python manage.py makemigrations
-python manage.py migrate  Выполнение миграций
+Для старта необходимы переменные окружения в фаиле .env
 
-pip install -r requirements.txt Установка всех пакетов
+Миграции, сбор статики происходит автоматически.
 
-python manage.py runserver  Запуск сервера
+Для создания суперпользователя необходимо зайти в контейне docker exec -it id_container bash
 
-Либо запуск через Docker
-docker-compose up
+Выполнить python manage.py createsuperuser
