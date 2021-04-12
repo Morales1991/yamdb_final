@@ -50,14 +50,14 @@ jobs:
     needs: build_and_push_to_docker_hub
     if: github.ref == 'refs/heads/master'
     steps:
-      - name: executing remote ssh commands to deploy
+      - name: copy scp file to server
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          script:
-            docker-compose down && docker-compose build --pull && docker-compose up -d
+          source: 'docker-compose.yaml, nginx/, .env'
+          target: 'app'
 
   send_message:
     runs-on: ubuntu-latest
